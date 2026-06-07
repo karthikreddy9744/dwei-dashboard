@@ -1,0 +1,30 @@
+State,master_district,nfhs_district,status
+Andhra Pradesh,Y.S.R. Kadapa,Y.S.R.,DIRECT_MATCH
+Assam,Sribhumi,Karimganj,DIRECT_MATCH
+Chandigarh,Chandigarh,,NO_NFHS_DATA
+Gujarat,Ahmedabad,Ahmadabad,DIRECT_MATCH
+Gujarat,Dahod,Dohad,DIRECT_MATCH
+Gujarat,Dangs,Dang,DIRECT_MATCH
+Himachal Pradesh,Lahaul And Spiti,Lahul And Spiti,DIRECT_MATCH
+Karnataka,Bengaluru South,,NO_NFHS_DATA
+Karnataka,Chamarajanagar,Chamarajanagara,DIRECT_MATCH
+Karnataka,Davanagere,Davangere,DIRECT_MATCH
+Lakshadweep,Lakshadweep District,,NO_NFHS_DATA
+Maharashtra,Ahilyanagar,Ahmednagar,DIRECT_MATCH
+Maharashtra,Mumbai Suburban,,NO_NFHS_DATA
+Odisha,Angul,Anugul,DIRECT_MATCH
+Odisha,Balasore,Baleshwar,DIRECT_MATCH
+Odisha,Jajpur,Jajapur,DIRECT_MATCH
+Odisha,Keonjhar,Kendujhar,DIRECT_MATCH
+Puducherry,Puducherry,Pondicherry,DIRECT_MATCH
+Tamil Nadu,Kancheepuram,Kanchipuram,DIRECT_MATCH
+Tamil Nadu,Thoothukkudi,Tuticorin,DIRECT_MATCH
+Tamil Nadu,Viluppuram,Villupuram,DIRECT_MATCH
+The Dadra And Nagar Haveli And Daman And Diu,Dadra And Nagar Haveli,,NO_NFHS_DATA
+Uttar Pradesh,Bara Banki,Barabanki,DIRECT_MATCH
+Uttar Pradesh,Kushinagar,Kushi Nagar,DIRECT_MATCH
+Uttar Pradesh,Siddharthnagar,Siddharth Nagar,DIRECT_MATCH
+Uttarakhand,Rudraprayag,Rudra Prayag,DIRECT_MATCH
+Uttarakhand,Udham Singh Nagar,Udam Singh Nagar,DIRECT_MATCH
+Uttarakhand,Uttarkashi,Uttar Kashi,DIRECT_MATCH
+West Bengal,Cooch Behar,Coochbehar,DIRECT_MATCH

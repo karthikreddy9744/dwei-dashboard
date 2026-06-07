@@ -1,0 +1,20 @@
+{
+    "features": [
+        "female_literacy_pct",
+        "scst_pct",
+        "agri_worker_pct",
+        "poverty_log",
+        "night_lights_log"
+    ],
+    "outcomes": [
+        "STUNTING",
+        "WASTING",
+        "UNDERWEIGHT",
+        "ANEMIA",
+        "INST_DEL",
+        "SANITATION",
+        "CLEAN_FUEL",
+        "IMMUNIZATION"
+    ],
+    "n_districts": 614
+}

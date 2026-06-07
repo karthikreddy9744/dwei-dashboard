@@ -1,0 +1,91 @@
+State,lgd_district,mgnregs_district,status
+Andaman And Nicobar Islands,South Andamans,SOUTH ANDAMAN,DIRECT_MATCH
+Andhra Pradesh,Ananthapuramu,ANANTAPUR,DIRECT_MATCH
+Andhra Pradesh,Sri Potti Sriramulu Nellore,NELLORE,DIRECT_MATCH
+Andhra Pradesh,Visakhapatnam,VISAKHAPATANAM,DIRECT_MATCH
+Andhra Pradesh,Y.S.R. Kadapa,Y.S.R,DIRECT_MATCH
+Arunachal Pradesh,Dibang Valley,UPPER DIBANG VALLEY,DIRECT_MATCH
+Assam,Kamrup Metro,KAMRUP (METRO),DIRECT_MATCH
+Assam,Marigaon,Morigaon,DIRECT_MATCH
+Assam,Sribhumi,KARIMGANJ,DIRECT_MATCH
+Bihar,Aurangabad,AURANAGABAD,DIRECT_MATCH
+Chandigarh,Chandigarh,,NO_MGNREGS_DATA
+Chhattisgarh,Dakshin Bastar Dantewada,DANTEWADA,DIRECT_MATCH
+Chhattisgarh,Kabeerdham,KAWARDHA,DIRECT_MATCH
+Chhattisgarh,Rajnandgaon,RAJNANDAGON,DIRECT_MATCH
+Chhattisgarh,Uttar Bastar Kanker,KANKER,DIRECT_MATCH
+Delhi,Central,,NO_MGNREGS_DATA
+Delhi,East,,NO_MGNREGS_DATA
+Delhi,New Delhi,,NO_MGNREGS_DATA
+Delhi,North,,NO_MGNREGS_DATA
+Delhi,North East,,NO_MGNREGS_DATA
+Delhi,North West,,NO_MGNREGS_DATA
+Delhi,South,,NO_MGNREGS_DATA
+Delhi,South West,,NO_MGNREGS_DATA
+Delhi,West,,NO_MGNREGS_DATA
+Gujarat,Ahmedabad,AHMADABAD,DIRECT_MATCH
+Gujarat,Dahod,DOHAD,DIRECT_MATCH
+Gujarat,Dangs,DANG,DIRECT_MATCH
+Haryana,Nuh,MEWAT,DIRECT_MATCH
+Himachal Pradesh,Lahaul And Spiti,LAHUL AND SPITI,DIRECT_MATCH
+Jammu And Kashmir,Budgam,BADGAM,DIRECT_MATCH
+Jammu And Kashmir,Rajouri,RAJAURI,DIRECT_MATCH
+Karnataka,Bengaluru South,,NO_MGNREGS_DATA
+Karnataka,Bengaluru Urban,BENGALURU,DIRECT_MATCH
+Karnataka,Chamarajanagar,CHAMARAJA NAGARA,DIRECT_MATCH
+Karnataka,Dharwad,DHARWAR,DIRECT_MATCH
+Karnataka,Vijayapura,VIJAYPURA,DIRECT_MATCH
+Kerala,Kasaragod,KASARGOD,DIRECT_MATCH
+Ladakh,Leh Ladakh,LEH (LADAKH),DIRECT_MATCH
+Madhya Pradesh,Ashoknagar,ASHOK NAGAR,DIRECT_MATCH
+Madhya Pradesh,Khandwa (East Nimar),KHANDWA,DIRECT_MATCH
+Madhya Pradesh,Khargone (West Nimar),KHARGONE,DIRECT_MATCH
+Madhya Pradesh,Narsimhapur,NARSINGHPUR,DIRECT_MATCH
+Maharashtra,Ahilyanagar,AHMEDNAGAR,DIRECT_MATCH
+Maharashtra,Chhatrapati Sambhajinagar,Chatrapati Sambhaji Nagar,DIRECT_MATCH
+Maharashtra,Mumbai,,NO_MGNREGS_DATA
+Maharashtra,Mumbai Suburban,,NO_MGNREGS_DATA
+Odisha,Balangir,BOLANGIR,DIRECT_MATCH
+Odisha,Balasore,BALESHWAR,DIRECT_MATCH
+Odisha,Keonjhar,KENDUJHAR,DIRECT_MATCH
+Odisha,Nabarangpur,NABARANGAPUR,DIRECT_MATCH
+Puducherry,Puducherry,PONDICHERRY,DIRECT_MATCH
+Punjab,Bathinda,BHATINDA,DIRECT_MATCH
+Punjab,Rupnagar,ROPAR,DIRECT_MATCH
+Punjab,S.A.S Nagar,SAS NAGAR MOHALI,DIRECT_MATCH
+Punjab,Shahid Bhagat Singh Nagar,NAWANSHAHR,DIRECT_MATCH
+Punjab,Sri Muktsar Sahib,MUKATSAR,DIRECT_MATCH
+Rajasthan,Ganganagar,SRI GANGANAGAR,DIRECT_MATCH
+Sikkim,Gangtok,Gangtok District,DIRECT_MATCH
+Sikkim,Gyalshing,Gyalshing District,DIRECT_MATCH
+Sikkim,Mangan,Mangan District,DIRECT_MATCH
+Sikkim,Namchi,Namchi District,DIRECT_MATCH
+Tamil Nadu,Chennai,,NO_MGNREGS_DATA
+Tamil Nadu,Kancheepuram,KANCHIPURAM,DIRECT_MATCH
+Tamil Nadu,Sivaganga,SIVAGANGAI,DIRECT_MATCH
+Tamil Nadu,Thiruvallur,TIRUVALLUR,DIRECT_MATCH
+Tamil Nadu,Thiruvarur,TIRUVARUR,DIRECT_MATCH
+Tamil Nadu,Viluppuram,VILLUPURAM,DIRECT_MATCH
+Telangana,Hyderabad,,NO_MGNREGS_DATA
+Telangana,Ranga Reddy,Rangareddy,DIRECT_MATCH
+The Dadra And Nagar Haveli And Daman And Diu,Daman,,NO_MGNREGS_DATA
+The Dadra And Nagar Haveli And Daman And Diu,Diu,,NO_MGNREGS_DATA
+Uttar Pradesh,Bara Banki,BARABANKI,DIRECT_MATCH
+Uttar Pradesh,Bhadohi,SANT RAVIDAS NAGAR,DIRECT_MATCH
+Uttar Pradesh,Kasganj,KASHGANJ,DIRECT_MATCH
+Uttar Pradesh,Kushinagar,KUSHI NAGAR,DIRECT_MATCH
+Uttar Pradesh,Mahrajganj,MAHARAJGANJ,DIRECT_MATCH
+Uttar Pradesh,Sant Kabir Nagar,SANT KABEER NAGAR,DIRECT_MATCH
+Uttar Pradesh,Shrawasti,SHRAVASTI,DIRECT_MATCH
+Uttar Pradesh,Siddharthnagar,SIDDHARTH NAGAR,DIRECT_MATCH
+Uttarakhand,Rudraprayag,RUDRA PRAYAG,DIRECT_MATCH
+Uttarakhand,Udham Singh Nagar,UDAM SINGH NAGAR,DIRECT_MATCH
+Uttarakhand,Uttarkashi,UTTAR KASHI,DIRECT_MATCH
+West Bengal,Cooch Behar,COOCHBEHAR,DIRECT_MATCH
+West Bengal,Dakshin Dinajpur,DINAJPUR DAKSHIN,DIRECT_MATCH
+West Bengal,Darjeeling,Darjeeling Gorkha Hill Council (DGHC),DIRECT_MATCH
+West Bengal,Kolkata,,NO_MGNREGS_DATA
+West Bengal,Malda,MALDAH,DIRECT_MATCH
+West Bengal,North 24 Parganas,24 PARGANAS (NORTH),DIRECT_MATCH
+West Bengal,South 24 Parganas,24 PARGANAS SOUTH,DIRECT_MATCH
+West Bengal,Uttar Dinajpur,DINAJPUR UTTAR,DIRECT_MATCH

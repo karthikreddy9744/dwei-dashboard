@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/*
+
+# Environment
+.env
+
+# Logs
+*.log
+
+# macOS metadata
+.AppleDouble
+.LSOverride

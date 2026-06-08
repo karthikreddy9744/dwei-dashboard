@@ -362,10 +362,14 @@ All free, open-source, no GPU required. Runs on a standard laptop.
   --------------------------- ------------- -------------------------------------------
   **Tool**                    **Version**   **Purpose + Key Note**
 
-  **plotly + plotly-express** 5.20.x        All interactive charts --- choropleth,
-                                            radar, bar, scatter, histogram.
-                                            px.choropleth_mapbox, px.scatter with
-                                            trendline=\'ols\'.
+  **plotly**                  6.x           Interactive data visualizations, maps
+
+  **streamlit**               1.58.0        Main dashboard --- native layout system,
+                                            Plotly integration, Streamlit Cloud ready
+
+  **geopandas**               0.14.x        Spatial joins, GeoJSON parsing for maps
+
+  **shapely**                 2.x           Geometry processing for map boundaries
 
   **matplotlib**              3.8.x         SHAP waterfall and summary plots (SHAP
                                             library renders via matplotlib backend
@@ -373,22 +377,6 @@ All free, open-source, no GPU required. Runs on a standard laptop.
 
   **seaborn**                 0.13.x        Correlation heatmaps and EDA plots in
                                             Jupyter notebooks only --- NOT in dashboard
-
-  **streamlit**               1.32.x        Main dashboard --- zero HTML/JS, native
-                                            Plotly, free Streamlit Cloud deployment
-
-  **streamlit-extras**        0.4.x         Metric cards, colored badges for Overview
-                                            page (total districts, avg DWEI, tier
-                                            counts)
-
-  **streamlit-option-menu**   0.3.x         Animated sidebar navigation icons for all 5
-                                            pages
-
-  **streamlit-aggrid**        0.3.x         Interactive sortable/filterable rankings
-                                            table --- handles 620 rows smoothly
-
-  **geopandas**               0.14.x        Merge simplified GeoJSON with DWEI district
-                                            scores for choropleth
   --------------------------- ------------- -------------------------------------------
 
   -----------------------------------------------------------------------
@@ -404,20 +392,17 @@ All free, open-source, no GPU required. Runs on a standard laptop.
 **2.5 Complete requirements.txt --- All Pinned Versions**
 
 +-----------------------------------------------------------------------+
-| pandas==2.2.2 numpy==1.26.4 openpyxl==3.1.2                           |
+| pandas==3.0.3 numpy==2.4.6 openpyxl==3.1.5                            |
 |                                                                       |
-| pyarrow==15.0.2 fuzzywuzzy==0.18.0 python-Levenshtein==0.21.0         |
+| pyarrow==24.0.0 fuzzywuzzy==0.18.0 python-Levenshtein==0.21.0         |
 |                                                                       |
-| scikit-learn==1.4.2 xgboost==2.0.3 shap==0.45.0                       |
+| scikit-learn==1.9.0 xgboost==2.0.3 shap==0.45.0                       |
 |                                                                       |
-| scipy==1.12.0 statsmodels==0.14.1 joblib==1.3.2                       |
+| scipy==1.17.1 statsmodels==0.14.1 joblib==1.5.3                       |
 |                                                                       |
-| plotly==5.20.0 matplotlib==3.8.4 seaborn==0.13.2                      |
+| plotly==6.8.0 matplotlib==3.8.4 seaborn==0.13.2                       |
 |                                                                       |
-| streamlit==1.32.2 streamlit-extras==0.4.3                             |
-| streamlit-option-menu==0.3.6                                          |
-|                                                                       |
-| streamlit-aggrid==0.3.4 geopandas==0.14.3 shapely==2.0.3              |
+| streamlit==1.58.0 geopandas==0.14.3 shapely==2.1.2                    |
 +-----------------------------------------------------------------------+
 
 **SECTION 3 --- ALL 19 DOWNLOADED FILES --- DETAILED SPECIFICATION**
@@ -942,27 +927,37 @@ Activity)**
 | │ └── master.parquet ← Final merged file --- all ML reads from here   |
 |                                                                       |
 | ├── notebooks/                                                        |
-|                                                                       |
 | │ ├── 01_data_cleaning.ipynb                                          |
-|                                                                       |
 | │ ├── 02_lgd_merging.ipynb                                            |
-|                                                                       |
 | │ ├── 03_dwei_score.ipynb                                             |
-|                                                                       |
 | │ ├── 04_clustering.ipynb                                             |
-|                                                                       |
 | │ └── 05_xgboost_shap.ipynb                                           |
 |                                                                       |
 | ├── models/ ← ridge_models.pkl scaler.pkl kmeans.pkl xgboost.pkl      |
-|                                                                       |
-| ├── geojson/ ← india_districts_simplified.geojson (after mapshaper)   |
-|                                                                       |
+| ├── geojson/ ← india_districts_simplified.geojson                     |
 | ├── shap_values/ ← shap_values.parquet (pre-computed)                 |
 |                                                                       |
+| ├── pages/ ← Streamlit multi-page app screens                         |
+| │ ├── 1_Overview.py                                                   |
+| │ ├── 2_District_Explorer.py                                          |
+| │ ├── 3_Compare_Districts.py                                          |
+| │ ├── 4_Tier_Analysis.py                                              |
+| │ ├── 5_National_Insights.py                                          |
+| │ └── 6_Methodology.py                                                |
+|                                                                       |
+| ├── components/ ← Reusable UI components (e.g. radar charts)          |
+| ├── styles/                                                           |
+| │ └── custom.css ← Custom Glassmorphism UI and Animations             |
+| ├── utils/                                                            |
+| │ ├── constants.py, data_loader.py, tier_colors.py                    |
+| │ └── helpers.py ← UI styling, metric cards, plotting tools           |
+|                                                                       |
+| ├── tests/ ← Unit testing scripts                                     |
+| ├── docs/ ← Additional documentation                                  |
+|                                                                       |
 | ├── app.py ← Streamlit entry point                                    |
-|                                                                       |
+| ├── environment.yml ← Conda environment spec                          |
 | ├── data_notes.md ← Document EVERY manual decision here               |
-|                                                                       |
 | └── requirements.txt                                                  |
 +-----------------------------------------------------------------------+
 
@@ -1566,6 +1561,27 @@ All 7 visualizations use Plotly for interactivity. All charts use
 
   -----------------------------------------------------------------------
 
+**7.5 UI/UX Design System**
+
+  ------------------ ------------------------------------------------------
+  **Element**        **Implementation Details**
+  
+  **Glassmorphism**  Defined in `styles/custom.css`. `dwei-hero` class 
+                     uses translucent backgrounds and `backdrop-filter: blur`
+                     for premium headers.
+  
+  **Interactive**    Metric cards and section cards feature CSS `transform`
+  **Cards**          and custom box-shadows on hover. Dataframes are built
+                     with row-hover styles for improved readability. 
+
+  **Helper Tools**   `utils/helpers.py` centralizes `metric_card` (custom
+                     HTML tooltips) and `style_plotly` functions. Streamlit
+                     `gap` controls are refined to prevent component overlaps.
+
+  **SHAP Boxes**     Human Explanations use `.shap-box` styling for better
+                     delineation of district strengths and weaknesses.
+  ------------------ ------------------------------------------------------
+
 **SECTION 8 --- PROJECT PLAN**
 
 **8.1 Five-Week Execution Plan**
@@ -1764,8 +1780,8 @@ All 7 visualizations use Plotly for interactivity. All charts use
 
 73. Push dwei_project/ to GitHub (public repo)
 
-74. Include requirements.txt, app.py,
-    geojson/india_districts_simplified.geojson
+74. Include `requirements.txt`, `app.py`, `pages/`, `utils/`, `styles/`,
+    `components/`, and `geojson/india_districts_simplified.geojson`
 
 75. Include data/master.parquet and shap_values/shap_values.parquet
 

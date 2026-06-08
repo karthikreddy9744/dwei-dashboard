@@ -1,0 +1,9 @@
+{
+  "total_master_districts": 632,
+  "total_geojson_districts": 594,
+  "matched": 532,
+  "unmatched": 100,
+  "duplicates": 0,
+  "match_rate": 84.18,
+  "validation_timestamp": "2026-06-08T11:53:32.201692"
+}

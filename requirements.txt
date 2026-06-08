@@ -75,6 +75,7 @@ prompt_toolkit==3.0.52
 psutil==7.2.2
 ptyprocess==0.7.0
 pure_eval==0.2.3
+pyarrow==24.0.0
 pycosat==0.6.6
 pycparser==3.0
 pydantic==2.13.2
@@ -102,6 +103,7 @@ shellingham==1.5.4
 six==1.17.0
 slicer==0.0.7
 stack-data==0.6.3
+streamlit==1.58.0
 threadpoolctl==3.6.0
 tomli==2.4.0
 tomlkit==0.13.3
@@ -118,3 +120,4 @@ wcwidth==0.8.0
 wheel==0.46.3
 xgboost==2.0.3
 zstandard==0.25.0
+plotly==6.8.0

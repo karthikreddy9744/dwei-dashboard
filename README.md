@@ -1,6 +1,17 @@
-**ANURAG UNIVERSITY**
+# District Welfare Efficiency Index (DWEI)
 
-School of Engineering --- Department of AI & ML
+A Multi-Indicator Machine Learning Framework for Governance-Adjusted Welfare Performance Analysis Across Indian Districts
+
+## Quick Navigation
+
+- Project Overview
+- Problem Statement
+- Data Sources
+- ML Pipeline
+- Dashboard Architecture
+- Results
+- Deployment
+- Viva Questions
 
 **DISTRICT WELFARE EFFICIENCY INDEX**
 
